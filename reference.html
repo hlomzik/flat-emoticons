@@ -4,6 +4,20 @@
         <meta charset="utf-8">
         <title>SVG Smiles</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            .canvas {
+                background-image: url("smiles.png");
+                background-position: -48px -172px;
+                position: relative;
+                width: 400px; height: 400px;
+            }
+            .flat-smile {
+                margin: 0 10px;
+                position: absolute;
+            }
+            .flat-smile-angry { left: 100px; }
+        </style>
     </head>
     <body>
         <div class="canvas">
@@ -16,19 +30,6 @@
                 <polygon points="23,65 37,61 45,71 50,66 54,70 63.5,57.5 75,71 64,62 54,77 50,72 44,78 35,64" stroke="none" />
             </svg>
         </div>
-        <style>
-        .canvas {
-            background-image: url("smiles.png");
-            background-position: -48px -172px;
-            position: relative;
-            width: 400px; height: 400px;
-        }
-        .flat-smile {
-            margin: 0 10px;
-            position: absolute;
-        }
-        .flat-smile-angry { left: 100px; }
-        </style>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
